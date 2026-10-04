@@ -1,0 +1,29 @@
+# Per-problem Slurm resources. Whitespace separated; first matching row wins (bash glob on the problem dir); '-' = default.
+#   time        wall limit for ONE (case, sampler) run, HH:MM:SS or D-HH:MM:SS   (cluster maximum is 4 days)
+#   mem         memory for one run (the nodes have 192 GB for 48 cores, i.e. ~4 GB per core)
+#   cpus        cores per run (every sampler here is single-core; leave at 1)
+#   partition   '-' = $IE_PARTITION (cpu).  Use 'hm' (768 GB nodes) only for a problem that runs out of memory
+#   mutex       1 = the runs of this directory share files (a download, a fermipy/BXA work dir, ...) and must not
+#               overlap: they are submitted as an array limited to 1 task at a time (the same thing run.sh did serially)
+#   net         1 = needs outbound internet at RUN time. Skipped by `submit.sh --no-net` (use it if the compute
+#               nodes have no internet; `slurm/check.sh --net` tells you)
+#   max_ncalls  '-' = the global MAX_NCALLS (100000). Lower it for problems with a slow likelihood.
+#
+# !! The wall times are first guesses made from reading the code, not measurements. Run the cheap problems first,
+# !! look at `slurm/status.sh --sacct`, and adjust (or re-submit timeouts with `submit.sh --time-mult 2`).
+#
+# pattern                  time        mem   cpus  partition  mutex  net  max_ncalls
+synthetic/*                04:00:00    4G    1     -          0      0    -
+real/powerlaw-relation     04:00:00    4G    1     -          0      0    -
+real/lj6                   06:00:00    4G    1     -          0      0    -
+real/bixrayspectrum        06:00:00    4G    1     -          0      0    -
+real/posteriorstacker      04:00:00    4G    1     -          1      0    -
+real/exoplanet             24:00:00    8G    1     -          0      0    -
+real/mosfit                24:00:00    8G    1     -          0      0    -
+real/icecube               24:00:00    16G   1     -          0      0    -
+real/ligo                  24:00:00    16G   1     -          0      1    -
+real/cosmology             4-00:00:00  8G    1     -          0      0    -
+real/crab                  2-00:00:00  16G   1     -          1      1    -
+real/grb                   2-00:00:00  16G   1     -          1      1    -
+real/xray-agn-ciao         2-00:00:00  16G   1     -          1      0    -
+*                          12:00:00    8G    1     -          0      0    -

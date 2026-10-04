@@ -1,0 +1,24 @@
+# Old pins on purpose: this is the combination the original Dockerfile used (CLASS 3.2.0 python wrapper needs Cython<3,
+# MontePython is old Python code). A separate env means these pins do not affect any other problem.
+name: inf-cosmology
+channels: [conda-forge]
+dependencies:
+  - python=3.9
+  - numpy=1.23.5
+  - scipy
+  - "cython<3"
+  - "setuptools<70"
+  - matplotlib
+  - ultranest
+  - dynesty
+  - nestle
+  - pymultinest
+  - getdist
+  - corner
+  - h5py
+  - pyyaml
+  - six
+  - pip
+  - numba
+  - pip:
+      - emcee==3.1.6

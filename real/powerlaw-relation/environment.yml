@@ -1,0 +1,20 @@
+name: inf-powerlaw-relation
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - corner
+  - h5py
+  - joblib
+  - ultranest
+  - dynesty
+  - nestle
+  - pymultinest
+  - pip
+  - numba
+  - pip:
+      - emcee==3.1.6
+      - snowline
+      - autoemcee

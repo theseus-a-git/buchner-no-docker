@@ -1,0 +1,6 @@
+numpy==1.26.4
+numba==0.60.0
+matplotlib==3.9.2
+mpi4py==4.1.2
+pytest==9.1.1
+scipy==1.17.1

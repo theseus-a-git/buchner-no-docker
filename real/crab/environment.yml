@@ -1,0 +1,23 @@
+name: inf-crab
+channels: [conda-forge, fermi]
+dependencies:
+  - python=3.11
+  - fermitools
+  - threeml
+  - astromodels
+  - healpy
+  - astropy-healpix
+  - gammapy
+  - "regions<0.12"
+  - gsl
+  - ultranest
+  - dynesty
+  - nestle
+  - numba
+  - corner
+  - matplotlib
+  - pyyaml
+  - pip
+
+  - pip:
+      - emcee==3.1.6

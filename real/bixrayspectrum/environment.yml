@@ -1,0 +1,22 @@
+name: inf-bixrayspectrum
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - astropy
+  - h5py
+  - corner
+  - getdist
+  - joblib
+  - ultranest
+  - pymultinest
+  - dynesty
+  - nestle
+  - pip
+  - numba
+  - pip:
+      - emcee==3.1.6
+      - snowline
+      - autoemcee

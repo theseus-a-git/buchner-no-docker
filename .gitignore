@@ -1,0 +1,28 @@
+# generated outputs and caches
+runs/
+systematiclogs/
+__pycache__/
+*.pyc
+*:Zone.Identifier
+*.orig
+*.bak
+*~
+
+# downloaded or cloned by the scripts (recreated by setup.sh / run.sh)
+real/xray-agn-ciao/BXA/
+real/xray-agn-ciao/models/
+real/mosfit/LSQ12dlf.json
+real/crab/Crab_data/
+real/crab/chains/
+real/crab/__*/
+real/grb/glg_*
+real/grb/*_bkg.h5
+real/lj6/LJ[0-9]*/
+real/cosmology/class_public-3.2.0/
+real/cosmology/montepython_public/
+real/posteriorstacker/PosteriorStacker/
+sampler_comparison.*
+real/exoplanet/data/hats46_tess_sector02.fits
+real/exoplanet/data/*.part
+
+benchmark_results/

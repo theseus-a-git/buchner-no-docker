@@ -1,0 +1,17 @@
+name: inf-xray-agn-ciao
+channels: [https://cxc.cfa.harvard.edu/conda/ciao, conda-forge]
+dependencies:
+  - ciao
+  - sherpa
+  - bxa
+  - ultranest
+  - dynesty
+  - nestle
+  - corner
+  - numba
+  - astropy
+  - scipy
+  - pip
+
+  - pip:
+      - emcee==3.1.6

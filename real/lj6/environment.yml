@@ -1,0 +1,22 @@
+name: inf-lj6
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - astropy
+  - h5py
+  - corner
+  - getdist
+  - joblib
+  - ultranest
+  - numba
+  - pymultinest
+  - dynesty
+  - nestle
+  - pip
+  - pip:
+      - snowline
+      - autoemcee
+      - emcee==3.1.6

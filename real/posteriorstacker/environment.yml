@@ -1,0 +1,19 @@
+name: inf-posteriorstacker
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - ultranest
+  - dynesty
+  - nestle
+  - numba
+  - corner
+  - h5py
+  - joblib
+  - tqdm
+  - pip
+
+  - pip:
+      - emcee==3.1.6

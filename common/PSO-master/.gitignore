@@ -1,0 +1,17 @@
+# Ignore Pychache
+__pycache__/
+
+# Ignore pytest cache
+.pytest_cache
+
+# Ignore Temporary Files
+temp/
+
+# Ignore doxygen output
+docs/
+
+# Ignore Python environment
+venv/
+
+# Ignore special local files
+local/

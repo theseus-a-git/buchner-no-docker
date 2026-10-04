@@ -1,0 +1,25 @@
+name: inf-exoplanet
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - astropy
+  - h5py
+  - corner
+  - getdist
+  - joblib
+  - ultranest
+  - pymultinest
+  - dynesty
+  - nestle
+  - batman-package
+  - george
+  - pip
+  - numba
+  - pip:
+      - emcee==3.1.6
+      - juliet
+      - snowline
+      - autoemcee
